@@ -10,9 +10,9 @@ public class Connector {
     public Connection connection;
     private Statement statement;
 
-    private final String url = "jdbc:postgresql://localhost:5432/loginpage";
-    private final String user = "wt80";
-    private final String password = "dupa123";
+    private final String url = System.getenv("url");
+    private final String user = System.getenv("user");
+    private final String password = System.getenv("password");
 
 
     public Statement getStatement() {
